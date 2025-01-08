@@ -1,5 +1,5 @@
 "use client";
-import React, { FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import {
   Calendar,
   Clock,
@@ -28,7 +28,9 @@ const DemoScheduler = () => {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -85,7 +87,7 @@ const DemoScheduler = () => {
                   Demo Schedule Request Received!
                 </AlertDescription>
                 <p className="text-gray-600">
-                  We'll contact you within 24 hours to confirm your demo
+                  We&apos;ll contact you within 24 hours to confirm your demo
                   session. Check your email for further details.
                 </p>
               </div>
@@ -119,6 +121,7 @@ const DemoScheduler = () => {
                     Name
                   </label>
                   <input
+                    title="Name"
                     type="text"
                     name="name"
                     required
@@ -132,6 +135,7 @@ const DemoScheduler = () => {
                     Email
                   </label>
                   <input
+                    title="Email"
                     type="email"
                     name="email"
                     required
@@ -148,6 +152,7 @@ const DemoScheduler = () => {
                     Phone
                   </label>
                   <input
+                    title="Phone"
                     type="tel"
                     name="phone"
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
@@ -160,6 +165,7 @@ const DemoScheduler = () => {
                     Organization
                   </label>
                   <input
+                    title="Organization"
                     type="text"
                     name="organization"
                     required
@@ -176,6 +182,7 @@ const DemoScheduler = () => {
                     Your Role
                   </label>
                   <select
+                    title="Role"
                     name="role"
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                     value={formData.role}
@@ -192,6 +199,7 @@ const DemoScheduler = () => {
                     Number of Participants
                   </label>
                   <select
+                    title="Number of Participants"
                     name="participantCount"
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                     value={formData.participantCount}
@@ -211,6 +219,7 @@ const DemoScheduler = () => {
                     Preferred Date
                   </label>
                   <input
+                    title="Preferred Date"
                     type="date"
                     name="preferredDate"
                     required
@@ -224,6 +233,7 @@ const DemoScheduler = () => {
                     Preferred Time
                   </label>
                   <select
+                    title="Preferred Time"
                     name="preferredTime"
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                     value={formData.preferredTime}
