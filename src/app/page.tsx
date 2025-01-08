@@ -13,7 +13,7 @@ const MarketingPage = () => {
       <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
         <AnimatedHeader
           headline="Transform Your School's Digital Experience"
-          text="SomaNasi is Kenya's comprehensive school management system, designed to streamline administration, enhance learning, and connect your entire school community."
+          text="SomaNasi is a comprehensive school management system, designed to streamline administration, enhance learning, and connect your entire school community."
           action="Schedule a Demo"
         />
 
@@ -41,7 +41,7 @@ const MarketingPage = () => {
                 <FeatureCardAnimated
                   icon={<Settings className="w-8 h-8" />}
                   title="For Administrators"
-                  description="Manage your entire school efficiently with powerful tools."
+                  description="Manage your entire school efficiently with powerful tools and AI."
                 />
               </Link>
             </div>
