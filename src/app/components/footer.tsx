@@ -10,8 +10,8 @@ export const Footer = () => (
         </div>
         <div>
           <h4 className="font-semibold mb-4">Contact Us</h4>
-          <p className="text-gray-400">Email: info@somanasi.com</p>
-          <p className="text-gray-400">Phone: +254 XXX XXX XXX</p>
+          <p className="text-gray-400">Email: somanasi@protonmail.com</p>
+          <p className="text-gray-400">Phone: +254 745050238</p>
         </div>
         <div>
           <h4 className="font-semibold mb-4">Follow Us</h4>
