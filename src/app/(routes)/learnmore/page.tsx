@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 // Learn More Page
-export const LearnMorePage = () => (
+const LearnMorePage = () => (
   <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
     {/* Hero Section */}
     <Header
