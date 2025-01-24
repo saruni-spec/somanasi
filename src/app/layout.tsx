@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Soma Nasi",
-  description: "Your schol's digital solution",
+  description: "Your school's digital solution",
 };
 
 export default function RootLayout({
